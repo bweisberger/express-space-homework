@@ -1,3 +1,5 @@
+// DATA - put into marsMissions.js file inside of a models folder, for module.exports
+// remember to require it in the server
 const marsMissions = [
   {
     name: "Curiosity",
@@ -36,4 +38,4 @@ const marsMissions = [
   }
 ];
 
-module.exports(marsMissions)
+module.exports = marsMissions

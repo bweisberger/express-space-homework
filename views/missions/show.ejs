@@ -1,7 +1,17 @@
-<ul class="mission-data">
-    <li>Name: <%=mission.name%></li>
-    <li>Launch Date: <%=mission.launchDate%></li>
-    <li>Operator: <%=mission.operator%></li>
-    <li>Mission Type: <%=mission.missionType%></li>
-    <img src=<%mission.img%>>
-</ul>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%=mission.name%> Mission</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <ul class="mission-data">
+        <li>Name: <%=mission.name%></li>
+        <li>Launch Date: <%=mission.launchDate%></li>
+        <li>Operator: <%=mission.operator%></li>
+        <li>Mission Type: <%=mission.missionType%></li>
+        <img src=<%=mission.img%>>
+    </ul>
+  </body>
+</html>

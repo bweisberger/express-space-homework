@@ -43,7 +43,7 @@ app.get('/missions/', (req, res)=>{
 // the view should display all the data for a single mission
 app.get('/missions/:name', (req, res)=>{
   MarsMissions.forEach(function(mission, index){
-      if (req.params.name.toLowerCase() === MarsMissions[index].name.toLowerCase()){
+      if (req.params.name.toLowerCase() === mission.name.toLowerCase()){
         res.render('missions/show.ejs', {mission: MarsMissions[index]});
       };
     });

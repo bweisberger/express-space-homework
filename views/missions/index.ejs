@@ -1,5 +1,15 @@
-<ul class="missions">
-  <%marsMissions.forEach(function(mission, index){%>
-    <li><%=mission.name%></li>
-  <%});%>
-</ul>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Missions to Mars</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <ul class="missions">
+      <%marsMissions.forEach(function(mission, index){%>
+        <li><a href="/missions/<%=mission.name%>"><%=mission.name%></a></li>
+      <%});%>
+    </ul>
+  </body>
+</html>

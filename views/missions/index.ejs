@@ -2,14 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
     <title>Missions to Mars</title>
-    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    <ul class="missions">
-      <%marsMissions.forEach(function(mission, index){%>
-        <li><a href="/missions/<%=mission.name%>"><%=mission.name%></a></li>
-      <%});%>
-    </ul>
+    <div class="container">
+      <h1>Missions to Mars</h1>
+      <img src="https://www.stickpng.com/assets/images/580b585b2edbce24c47b2708.png" alt="planet mars">
+      <ul class="missions">
+        <%marsMissions.forEach(function(mission, index){%>
+          <li><a href="/missions/<%=mission.name%>"><%=mission.name%></a></li>
+        <%});%>
+      </ul>
+    </div>
   </body>
 </html>

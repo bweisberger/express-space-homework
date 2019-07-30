@@ -1,0 +1,36 @@
+*{
+  /* border: red dotted 1px; */
+  color: white;
+  background-color: black;
+}
+
+.container{
+  display: grid;
+  grid-template-columns:1fr 2fr;
+  grid-template-rows:1fr 6fr 1fr;
+}
+
+ul {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+  text-align: left;
+  font-size: calc(20pt + 2vh);
+  list-style: none;
+  place-self: start center;
+}
+
+img {
+  grid-column: 2;
+  grid-row: 2;
+  width: 75%;
+  place-self: center;
+
+}
+
+h1 {
+  font-size: calc(26pt + 3vh);
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  place-self: start center;
+  color: red;
+}

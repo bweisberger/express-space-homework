@@ -19,13 +19,14 @@ const app = express();
 
 // PORT
 const port = 3000;
-
+const MarsMissions = require('./models/marsMissions')
+app.use(express.static('public'));
 //Index Route that I made up
 app.get('/', (req, res)=>{
   res.send("Welcome to Mars")
 });
 
-const MarsMissions = require('./models/marsMissions.js')
+
 // INDEX Route
 // send data to 'missions/index.ejs' view
 // the view should display just the names of each mission

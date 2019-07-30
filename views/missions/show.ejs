@@ -2,16 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
     <title><%=mission.name%> Mission</title>
-    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    <ul class="mission-data">
-        <li>Name: <%=mission.name%></li>
-        <li>Launch Date: <%=mission.launchDate%></li>
-        <li>Operator: <%=mission.operator%></li>
-        <li>Mission Type: <%=mission.missionType%></li>
-        <img src=<%=mission.img%>>
-    </ul>
+    <div class="container">
+      <h1><%=mission.name%></h1>
+      <ul class="mission-data">
+          <li>Launch Date: <%=mission.launchDate%></li>
+          <li>Operator: <%=mission.operator%></li>
+          <li>Mission Type: <%=mission.missionType%></li>
+      </ul>
+      <img src=<%=mission.img%>>
+    </div>
   </body>
 </html>
